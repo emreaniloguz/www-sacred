@@ -21,14 +21,12 @@ export default async function Page(props) {
         </CardDouble>
         
         <br />
-
-        {/* We will add links to blog posts here later */}
-        <ActionListItem icon={`⭢`} href="/blog/matrix-multiplication">
+        {/* <ActionListItem icon={`⭢`} href="/blog/matrix-multiplication">
           A Dive into Matrix Multiplication
         </ActionListItem>
         <ActionListItem icon={`⭢`} href="/blog/adding-images">
           Adding Images and Gifs to Your Site
-        </ActionListItem>
+        </ActionListItem> */}
       </Grid>
     </DefaultLayout>
   );
