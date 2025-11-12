@@ -28,7 +28,7 @@ export default function ImagePostPage() {
           </p>
           <br />
           <Image 
-            src="/hiroshin.jpg" 
+            src="/hiroshi.jpg" 
             alt="A descriptive caption for the diagram" 
             width={500} 
             height={300} 
