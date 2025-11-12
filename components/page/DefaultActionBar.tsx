@@ -125,7 +125,7 @@ const DefaultActionBar: React.FC<DefaultActionBarProps> = ({ items = [] }) => {
 
     const applyTheme = (e: MediaQueryList | MediaQueryListEvent) => {
       if (e.matches) {
-        Utilities.onHandleAppearanceChange('theme-dark');
+        Utilities.onHandleAppearanceChange('');
       } else {
         Utilities.onHandleAppearanceChange('');
       }
@@ -206,11 +206,6 @@ const DefaultActionBar: React.FC<DefaultActionBarProps> = ({ items = [] }) => {
               },
               {
                 icon: '⊹',
-                children: 'Kommuna Mono™ Trial',
-                onClick: () => Utilities.onHandleFontChange('font-use-kommuna-mono'),
-              },
-              {
-                icon: '⊹',
                 children: 'Monaspace Argon Variable [OFL]',
                 onClick: () => Utilities.onHandleFontChange('font-use-monaspace-argon-mono'),
               },
@@ -241,11 +236,6 @@ const DefaultActionBar: React.FC<DefaultActionBarProps> = ({ items = [] }) => {
               },
               {
                 icon: '⊹',
-                children: 'Panama Mono™ Trial',
-                onClick: () => Utilities.onHandleFontChange('font-use-panama-mono'),
-              },
-              {
-                icon: '⊹',
                 children: 'SFMono Square [FOSS]',
                 onClick: () => Utilities.onHandleFontChange('font-use-sfmono-square'),
               },
@@ -253,11 +243,6 @@ const DefaultActionBar: React.FC<DefaultActionBarProps> = ({ items = [] }) => {
                 icon: '⊹',
                 children: 'Server Mono [OFL]',
                 onClick: () => Utilities.onHandleFontChange('font-use-server-mono'),
-              },
-              {
-                icon: '⊹',
-                children: 'TX-02 Berkeley Mono™ Trial',
-                onClick: () => Utilities.onHandleFontChange('font-use-berkeley-mono'),
               },
               {
                 icon: '⊹',

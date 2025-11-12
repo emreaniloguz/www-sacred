@@ -6,27 +6,23 @@ import DefaultActionBar from '@components/page/DefaultActionBar';
 import Grid from '@components/Grid';
 import CardDouble from '@components/CardDouble';
 import ActionListItem from '@components/ActionListItem';
-import Package from '@root/package.json';
+import BlockLoader from '@components/BlockLoader'; // <-- 1. IMPORT THE BUILT-IN LOADER
+import DebugGrid from '@components/Grid';
 
+  
 export default async function Page(props) {
   return (
     <DefaultLayout>
       <DefaultActionBar />
       <br />
       <Grid>
-        <CardDouble title={`WELCOME TO ${Package.name.toUpperCase()}`}>
-          This is the new, simplified homepage for my personal website.
-          <br /><br />
-          You can find my blog posts below:
+        {/* 2. UPDATED INTRO TEXT */}
+        <CardDouble title="Welcome">
+          A collection of notes, experiments, and articles on computer vision and software development. Currently under construction <BlockLoader mode={9} /> 
         </CardDouble>
-        
         <br />
-        {/* <ActionListItem icon={`⭢`} href="/blog/matrix-multiplication">
-          A Dive into Matrix Multiplication
-        </ActionListItem>
-        <ActionListItem icon={`⭢`} href="/blog/adding-images">
-          Adding Images and Gifs to Your Site
-        </ActionListItem> */}
+
+
       </Grid>
     </DefaultLayout>
   );
