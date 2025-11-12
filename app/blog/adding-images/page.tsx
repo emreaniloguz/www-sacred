@@ -10,7 +10,7 @@ import ActionListItem from '@components/ActionListItem';
 
 export default function ImagePostPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout previewPixelSRC="/hiroshi.jpg">
       <DefaultActionBar />
       <br />
       <Grid>
