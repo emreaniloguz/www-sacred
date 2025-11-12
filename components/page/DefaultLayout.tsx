@@ -10,8 +10,8 @@ interface DefaultLayoutProps {
 const DefaultLayout: React.FC<DefaultLayoutProps> = ({ previewPixelSRC, children }) => {
   return (
     <div className={styles.body}>
-      <img className={styles.pixel} src={previewPixelSRC} alt="" />
-      {children}
+    {previewPixelSRC && <img className={styles.pixel} src={previewPixelSRC} alt="" />}
+    {children}
     </div>
   );
 };
