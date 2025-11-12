@@ -13,7 +13,7 @@ import DebugGrid from '@components/Grid';
 export default async function Page(props) {
   return (
     <DefaultLayout>
-      <DefaultActionBar />
+      {/* <DefaultActionBar /> */}
       <br />
       <Grid>
         {/* 2. UPDATED INTRO TEXT */}
