@@ -10,7 +10,7 @@ import ActionListItem from '@components/ActionListItem';
 
 export default function ImagePostPage() {
   return (
-    <DefaultLayout previewPixelSRC="/hiroshi.jpg">
+    <DefaultLayout>
       <DefaultActionBar />
       <br />
       <Grid>
@@ -27,9 +27,8 @@ export default function ImagePostPage() {
             From there, you can reference them directly in your code. It's best to use the built-in `Image` component, as it handles optimization, resizing, and lazy loading for you.
           </p>
           <br />
-          {/* This will render the image you placed in public/my-diagram.png */}
           <Image 
-            src="/template-app-icon.png" 
+            src="/hiroshin.jpg" 
             alt="A descriptive caption for the diagram" 
             width={500} 
             height={300} 

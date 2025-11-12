@@ -11,7 +11,7 @@ import ActionListItem from '@components/ActionListItem';
 
 export default function BlogPostPage() {
   return (
-    <DefaultLayout previewPixelSRC="/hiroshi.jpg">
+    <DefaultLayout>
       <DefaultActionBar />
       <br />
       <Grid>
